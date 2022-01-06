@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  font-size:14px;
+}
+
+table{
+  margin-left: 33px;
+}
+
+.title{
+  margin-top: 25px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+
+.top-text{
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.top-text p{
+  padding-bottom: 25px;
+}
+
+.index-title{
+  width: 200px;
+  font-size: 14px;
+}
+
+.index-body{
+  width: 400px;
+  font-size: 14px;
+}
+
+.index-sed{
+  width: 150px;
+}
+
+.submit{
+  display:block;
+}
+
+.newbook{
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.newbook-title{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
