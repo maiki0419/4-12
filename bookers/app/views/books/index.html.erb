@@ -9,13 +9,28 @@
     <tr>
       <td><p><%= book.title %></p></td>
       <td><p><%= book.body %></p></td>
-      <td><%= link_to "Show",'/' %></td>
-      <td><%= link_to "Edit",'/' %></td>
-      <td><%= link_to "Destroy",'/' %></td>
+      <td><%= link_to "Show",book_path(book.id),class: 'link' %></td>
+      <td><%= link_to "Edit", edit_book_path(book.id),class: 'link' %></td>
+      <td><%= link_to "Destroy", destroy_book_path(book.id),method: :delete,"data-confirm" =>"本当に削除しますか？",class: 'link' %></td>
     </tr>
   <% end %>
 </table>
-<section class="newbook">
+
+<% if @book.errors.any? %>
+  <div class="errors-content">
+    <p class="errors-text"><%= @book.errors.count %>error</p>
+    <ul class="errors-message" >
+      <% @book.errors.full_messages.each do |message| %>
+        <li>
+          <%= message %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+<% end %>
+
+<section class="content">
   <h2 class="newbook-title">New book</h2>
   <%= form_with model: @book,url: '/books',method: :post,local:true do |f| %>
     <p>Title</p>

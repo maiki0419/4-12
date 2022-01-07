@@ -5,12 +5,31 @@
 }
 
 p{
-  font-size:14px;
+  font-size:13px;
 }
 
 table{
   margin-left: 33px;
 }
+
+.notice{
+  color:green;
+  margin-top:30px;
+  margin-left:50px;
+}
+
+
+.link{
+   color: black;
+   padding:0 5px;
+   font-size:13px;
+}
+
+.link:hover{
+  background-color: black;
+  color: white;
+}
+
 
 .title{
   margin-top: 25px;
@@ -42,17 +61,58 @@ table{
   width: 150px;
 }
 
+
 .submit{
   display:block;
+  margin: 10px 0;
 }
 
-.newbook{
+.content{
   margin-top: 25px;
   margin-left: 30px;
+}
+
+.content p{
+  margin-top: 10px;
 }
 
 .newbook-title{
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+.show-content{
+  margin:35px 60px;
+}
+
+.show-content p{
+  margin-bottom: 35px;
+}
+
+.show-content strong{
+  padding-right: 5px;
+}
+
+.show-link{
+  margin-left: 30px
+}
+
+.errors-content{
+  border: 1px solid red;
+  width:250px;
+  height:150px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.errors-text{
+  color:white;
+  background-color:red;
+}
+
+.errors-message{
+  padding-top:30px;
+  padding-left:30px;
+}
+
 
